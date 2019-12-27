@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CarCategoryCollectionViewCell" id="gTV-IL-0wX" customClass="CarCategoryCollectionViewCell" customModule="CarFluent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="27"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="445" height="27"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3qZ-76-DbD">
+                        <rect key="frame" x="0.0" y="0.0" width="445" height="27"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="G7T-PL-MJe">
+                                <rect key="frame" x="0.0" y="0.0" width="445" height="27"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ITEM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8uD-4E-gM1">
+                                        <rect key="frame" x="0.0" y="0.0" width="445" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="4Ii-qm-OhL"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="6BU-2Y-A9r"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                        <color key="textColor" name="#040404"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3zk-pi-Bhx">
+                                        <rect key="frame" x="0.0" y="25" width="445" height="2"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="Q1b-gc-RbQ"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="G7T-PL-MJe" firstAttribute="top" secondItem="3qZ-76-DbD" secondAttribute="top" id="GgE-Qv-ZyC"/>
+                            <constraint firstItem="G7T-PL-MJe" firstAttribute="leading" secondItem="3qZ-76-DbD" secondAttribute="leading" id="K43-Wv-w9s"/>
+                            <constraint firstAttribute="bottom" secondItem="G7T-PL-MJe" secondAttribute="bottom" id="ieG-4e-7NQ"/>
+                            <constraint firstAttribute="trailing" secondItem="G7T-PL-MJe" secondAttribute="trailing" id="mwW-Lw-hTh"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="3qZ-76-DbD" secondAttribute="trailing" id="5tz-D3-0Xh"/>
+                <constraint firstItem="3qZ-76-DbD" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="cbE-yi-owj"/>
+                <constraint firstItem="3qZ-76-DbD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nQ0-75-tDA"/>
+                <constraint firstAttribute="bottom" secondItem="3qZ-76-DbD" secondAttribute="bottom" id="y41-iX-QF6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="445" height="27"/>
+            <connections>
+                <outlet property="lblNameItem" destination="8uD-4E-gM1" id="zRy-hQ-uma"/>
+                <outlet property="viewSelection" destination="3zk-pi-Bhx" id="R5r-Yb-OB6"/>
+            </connections>
+            <point key="canvasLocation" x="34.057971014492757" y="36.495535714285715"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="#040404">
+            <color red="0.015686274509803921" green="0.015686274509803921" blue="0.015686274509803921" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

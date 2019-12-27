@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ColorCollectionViewCell" customModule="CarFluent" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeC-q0-UWn">
+                        <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JH9-1i-iBi">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="45"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icCheck" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-vx-O5J">
+                                        <rect key="frame" x="10" y="15" width="25" height="15"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.81960784310000001" green="0.28627450980000002" blue="0.35686274509999999" alpha="1" colorSpace="custom" customColorSpace="adobeRGB1998"/>
+                                <constraints>
+                                    <constraint firstItem="dYh-vx-O5J" firstAttribute="leading" secondItem="JH9-1i-iBi" secondAttribute="leading" constant="10" id="N4C-vn-0Ll"/>
+                                    <constraint firstItem="dYh-vx-O5J" firstAttribute="top" secondItem="JH9-1i-iBi" secondAttribute="top" constant="15" id="XWb-w0-DXL"/>
+                                    <constraint firstAttribute="trailing" secondItem="dYh-vx-O5J" secondAttribute="trailing" constant="10" id="hKt-zQ-Txe"/>
+                                    <constraint firstAttribute="bottom" secondItem="dYh-vx-O5J" secondAttribute="bottom" constant="15" id="m8q-Jv-jnZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isRounded" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JH9-1i-iBi" firstAttribute="top" secondItem="zeC-q0-UWn" secondAttribute="top" id="BV6-5j-azO"/>
+                            <constraint firstAttribute="trailing" secondItem="JH9-1i-iBi" secondAttribute="trailing" id="IBx-mt-iEx"/>
+                            <constraint firstItem="JH9-1i-iBi" firstAttribute="leading" secondItem="zeC-q0-UWn" secondAttribute="leading" id="PWJ-H2-wIw"/>
+                            <constraint firstAttribute="bottom" secondItem="JH9-1i-iBi" secondAttribute="bottom" id="hLB-cg-BYJ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="zeC-q0-UWn" secondAttribute="bottom" id="PRm-sf-xLo"/>
+                <constraint firstItem="zeC-q0-UWn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="T9a-86-zIR"/>
+                <constraint firstItem="zeC-q0-UWn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Vgd-6P-1o0"/>
+                <constraint firstAttribute="trailing" secondItem="zeC-q0-UWn" secondAttribute="trailing" id="bCQ-9K-AiQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="45" height="43"/>
+            <connections>
+                <outlet property="colorView" destination="JH9-1i-iBi" id="MI9-eN-Qmu"/>
+                <outlet property="imgSelected" destination="dYh-vx-O5J" id="5o1-ui-qns"/>
+            </connections>
+            <point key="canvasLocation" x="128.2608695652174" y="126.22767857142857"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icCheck" width="26" height="20"/>
+    </resources>
+</document>
